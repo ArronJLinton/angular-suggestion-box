@@ -11,13 +11,14 @@ app.controller('HomeController', ['$scope', 'suggestions', function($scope, sugg
 		}else{
 			$scope.posts.push({
 				title: $scope.title,
-				upVotes: 0
+				upvotes: 0
 			});
 		}
 		$scope.title = '';
 	};
 
 	$scope.upVote = function(index){
-		$scope.posts[index].upVotes++;
+		console.log(index);
+		$scope.posts[index].upvotes += 1;
 	};
 }]);
