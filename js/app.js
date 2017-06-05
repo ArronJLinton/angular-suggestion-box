@@ -1,9 +1,9 @@
-var app = angular.module('SuggestionBoxApp', ['ngRoute']);
+var app = angular.module('SuggestionBox', []);
 
-app.config(function($routeProvider){
-	$routeProvider
-		.when('/', {
-			controller: 'HomeController',
-			templateUrl: 'views/home.html'
-		});
-});
+// app.config(function($routeProvider){
+// 	$routeProvider
+// 		.when('/', {
+// 			controller: 'HomeController',
+// 			templateUrl: 'views/home.html'
+// 		});
+// });
