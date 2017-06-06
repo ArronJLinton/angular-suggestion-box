@@ -5,15 +5,16 @@ app.controller('HomeController', ['$scope', 'suggestions', function($scope, sugg
 	$scope.heading = 'Suggestion Box';
 
 	$scope.addSuggestion = function(){
+			
 			console.log($scope.title);
-		if(!$scope.title || $scope.title === ""){
-			return;
-		}else{
+		// if(!$scope.title || $scope.title === ""){
+		// 	return;
+		// }else{
 			$scope.posts.push({
 				title: $scope.title,
 				upvotes: 0
 			});
-		}
+		// }
 		$scope.title = '';
 	};
 
