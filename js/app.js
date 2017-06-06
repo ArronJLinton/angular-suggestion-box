@@ -1,3 +1,6 @@
+// Necessary to enable CORS
+Access-Control-Allow-Origin: *
+
 var app = angular.module('SuggestionBox', ['ngRoute']);
 
 app.config(function($routeProvider){
