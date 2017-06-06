@@ -6,17 +6,22 @@ app.factory('suggestions', [function(){
 			{
 				title: 'Free water bottles at clubs',
 				upvotes: 10,
-				comments: [],
+				comments: []
 			},
 			{
 				title: 'Assortment of breakfast foods and snacks at work',
 				upvotes: 25,
-				comments: [],
+				comments: []
 			},
 			{
 				title: 'Free water bottles at clubs',
 				upvotes: 10,
-				comments: [],
+				comments: [ 
+					{
+						body: 'testing',
+						upvotes: 0
+					},
+				]
 			},
 		]
 	};
